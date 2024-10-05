@@ -1,0 +1,17 @@
+name: Welcome Back
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Print Welcome Back
+        run: echo "Welcome back!"
